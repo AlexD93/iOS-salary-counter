@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Zsr-to-taJ">
+            <objects>
+                <viewController id="vL4-E0-Rh5" customClass="ViewController" customModule="Lab_03" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jja-ov-Nga"/>
+                        <viewControllerLayoutGuide type="bottom" id="TiW-Sj-1ej"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oTH-dz-54G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="724-EY-ajr">
+                                <rect key="frame" x="82" y="125" width="211" height="97"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqA-oT-9j7">
+                                <rect key="frame" x="129.5" y="230" width="116" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B6A-Xz-ZBW"/>
+                                    <constraint firstAttribute="width" constant="116" id="mzq-JW-Lap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTimer:" destination="vL4-E0-Rh5" eventType="touchUpInside" id="DJ5-sv-1ae"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zqA-oT-9j7" firstAttribute="top" secondItem="724-EY-ajr" secondAttribute="bottom" constant="8" symbolic="YES" id="3D3-WX-GzS"/>
+                            <constraint firstItem="724-EY-ajr" firstAttribute="top" secondItem="jja-ov-Nga" secondAttribute="bottom" constant="105" id="A6c-Yc-Yh0"/>
+                            <constraint firstItem="724-EY-ajr" firstAttribute="centerX" secondItem="zqA-oT-9j7" secondAttribute="centerX" id="G1h-if-Naz"/>
+                            <constraint firstItem="TiW-Sj-1ej" firstAttribute="top" secondItem="zqA-oT-9j7" secondAttribute="bottom" constant="387" id="Wqz-Gc-9EJ"/>
+                            <constraint firstItem="724-EY-ajr" firstAttribute="leading" secondItem="oTH-dz-54G" secondAttribute="leadingMargin" constant="66" id="Y30-6V-wiY"/>
+                            <constraint firstItem="724-EY-ajr" firstAttribute="centerX" secondItem="oTH-dz-54G" secondAttribute="centerX" id="xc1-GB-Vgw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="m_costLabel" destination="724-EY-ajr" id="jQr-HP-mA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1af-YA-VJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-916" y="-239.73013493253376"/>
+        </scene>
+    </scenes>
+</document>
